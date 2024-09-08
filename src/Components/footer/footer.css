@@ -1,0 +1,88 @@
+.footer{
+    background: #323233;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 80px;
+    padding: 20px 8vw ;
+    margin-top: 70px ;
+    scroll-behavior: smooth;
+}
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+.footer-content-right,
+.footer-content-left,
+.footer-content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.footer-content-right li,
+.footer-content-left li,
+.footer-content-center li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-content-right li:hover,
+.footer-content-left li:hover,
+.footer-content-center li:hover{
+    color: tomato;
+    transition: .4s linear;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+.footer-content-right h2,
+.footer-content-left h2,
+.footer-content-center h2{
+    color: tomato;
+    text-transform: uppercase;
+}
+.footer-social img{
+    width: 40px;
+    margin-right:10px;
+}
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+    border: none;
+    background: #49557e;;
+}
+.footer-copyright{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.footer-copyright #site{
+    color: tomato;
+    cursor: pointer;
+}
+.footer-copyright #copy{
+    color: #6d7cac;
+}
+.footer-copyright #me{
+    color: #6d7cac;
+    transition: .4s;
+    cursor: pointer;
+}
+.footer-copyright #me:hover{
+    color: tomato;
+    transform: scale(1.08);
+    
+}
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
